@@ -1,0 +1,82 @@
+/* 设计令牌：色彩、字体、间距、动效、断点 */
+
+:root {
+  /* 色彩 —— 亮色主题（默认） */
+  --bg: #FAFAFA;
+  --surface: #FFFFFF;
+  --surface-alt: #F3F3F3;
+  --fg: #111111;
+  --fg-2: #3A3A3A;
+  --muted: #6E6E6E;
+  --border: #E3E3E3;
+  --border-strong: #B9B9B9;
+  --accent: #002FA7;
+  --accent-fill: #002FA7;
+  --accent-on: #FFFFFF;
+  --accent-hover: #002985;
+  --accent-tint: #E9EEFB;
+
+  /* 字体 */
+  --font-latin: "Helvetica Neue", "Helvetica", "Akzidenz-Grotesk", Arial, sans-serif;
+  --font-cjk: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  --font-body: var(--font-latin), var(--font-cjk);
+  --font-mono: "SF Mono", ui-monospace, "JetBrains Mono", Menlo, Consolas, monospace;
+
+  /* 字号 */
+  --text-hero: clamp(3rem, 9vw, 8rem);
+  --text-3xl: 48px;
+  --text-2xl: 32px;
+  --text-xl: 24px;
+  --text-lg: 20px;
+  --text-md: 16px;
+  --text-sm: 14px;
+  --text-xs: 12px;
+  --text-label: 12px;
+  --text-code: 13px;
+
+  /* 间距刻度（4px） */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* 动效 */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-fast: 150ms;
+  --motion-base: 200ms;
+  --motion-slow: 400ms;
+  --stagger: 80ms;
+}
+
+[data-theme="dark"] {
+  --bg: #0F0F0F;
+  --surface: #171717;
+  --surface-alt: #1C1C1C;
+  --fg: #F0F0F0;
+  --fg-2: #B8B8B8;
+  --muted: #9C9C9C;
+  --border: rgba(255, 255, 255, 0.12);
+  --border-strong: rgba(255, 255, 255, 0.28);
+  --accent: #6C8CFF;
+  --accent-fill: #002FA7;
+  --accent-on: #FFFFFF;
+  --accent-hover: #002985;
+  --accent-tint: rgba(108, 140, 255, 0.14);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto !important; }
+}

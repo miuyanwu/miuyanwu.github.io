@@ -1,0 +1,71 @@
+{
+  "_comment": "离线兜底数据。抓取自 GitHub API（2026-08-02 快照）：https://api.github.com/users/miuyanwu 与 /repos?per_page=100。API 不可用时由 js/api.js 读取本文件。更新方法见 README 使用说明第 3 条。",
+  "user": {
+    "login": "miuyanwu",
+    "id": 176812447,
+    "name": "Elysia10032",
+    "created_at": "2024-07-28T13:28:50Z",
+    "public_repos": 3,
+    "location": "China",
+    "company": "CQUPT",
+    "avatar_url": "https://avatars.githubusercontent.com/u/176812447?v=4"
+  },
+  "repos": [
+    {
+      "id": 1,
+      "name": "Favorite-sticker",
+      "full_name": "miuyanwu/Favorite-sticker",
+      "html_url": "https://github.com/miuyanwu/Favorite-sticker",
+      "description": "轻量级 Windows 剪贴板管理器：自动保存剪贴板历史，支持收藏常用片段、一键复制、模糊搜索。C# / WPF / .NET 8，MVVM 架构，36 个单元测试。",
+      "language": "C#",
+      "fork": false,
+      "stargazers_count": 0,
+      "created_at": "2026-06-14T00:00:00Z",
+      "pushed_at": "2026-06-14T00:00:00Z",
+      "updated_at": "2026-06-14T00:00:00Z",
+      "homepage": null,
+      "topics": [],
+      "license": {"spdx_id": "MIT"},
+      "status": "done"
+    },
+    {
+      "id": 2,
+      "name": "Breast-Ultrasound-Image-Diagnosis-System",
+      "full_name": "miuyanwu/Breast-Ultrasound-Image-Diagnosis-System",
+      "html_url": "https://github.com/miuyanwu/Breast-Ultrasound-Image-Diagnosis-System",
+      "description": "乳腺超声图像智能诊断系统：基于 PyTorch 的良恶性分类项目，迁移学习 + 注意力机制 + Focal Loss，35 次实验迭代，验证集 AUC 0.9225。数据受隐私限制，仓库目前以实验文档为主。",
+      "language": "Python",
+      "fork": false,
+      "stargazers_count": 0,
+      "created_at": "2026-06-14T00:00:00Z",
+      "pushed_at": "2026-06-14T00:00:00Z",
+      "updated_at": "2026-08-02T00:00:00Z",
+      "homepage": null,
+      "topics": [],
+      "license": {"spdx_id": "MIT"},
+      "status": "in-progress"
+    },
+    {
+      "id": 3,
+      "name": "miuyanwu",
+      "full_name": "miuyanwu/miuyanwu",
+      "html_url": "https://github.com/miuyanwu/miuyanwu",
+      "description": "Config files for my GitHub profile.",
+      "language": null,
+      "fork": false,
+      "stargazers_count": 0,
+      "created_at": "2024-07-28T13:28:50Z",
+      "pushed_at": "2024-07-28T13:28:50Z",
+      "updated_at": "2024-07-28T13:28:50Z",
+      "homepage": "https://github.com/miuyanwu",
+      "topics": ["config", "github-config"],
+      "license": null,
+      "status": "profile"
+    }
+  ],
+  "stats": {
+    "repos": 3,
+    "activeThisYear": 2,
+    "accountAgeYears": 2
+  }
+}

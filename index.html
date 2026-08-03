@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elysia10032 — 首页</title>
+<meta name="description" content="Elysia10032（miuyanwu）的个人博客：项目复盘、学习笔记与 GitHub 动态。">
+<script>
+(function () {
+  try {
+    var saved = localStorage.getItem("theme");
+    var theme = (saved === "light" || saved === "dark") ? saved
+      : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  } catch (e) {
+    document.documentElement.setAttribute("data-theme", "light");
+  }
+})();
+</script>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<noscript>本站需要启用 JavaScript 才能正常浏览，请在浏览器设置中开启。</noscript>
+
+<header>
+  <nav class="site-nav container">
+    <a class="nav-brand" href="#/">Elysia10032</a>
+    <div class="nav-links nav-links-desktop">
+      <a class="nav-link" href="#/">首页</a>
+      <a class="nav-link" href="#/posts">笔记</a>
+      <a class="nav-link" href="#/projects">项目</a>
+      <a class="nav-link" href="#/about">关于</a>
+      <a class="nav-link" href="#/now">Now</a>
+    </div>
+    <div class="nav-links">
+      <button class="theme-toggle" aria-label="切换主题">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu">
+    <a class="nav-link" href="#/">首页</a>
+    <a class="nav-link" href="#/posts">笔记</a>
+    <a class="nav-link" href="#/projects">项目</a>
+    <a class="nav-link" href="#/about">关于</a>
+    <a class="nav-link" href="#/now">Now</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ 首页 ============ -->
+<section data-view="home">
+  <section class="hero container">
+    <span class="eyebrow">GITHUB · MIUYANWU · PORTFOLIO</span>
+    <h1 class="hero-title">ELYSIA10032</h1>
+    <p class="hero-subtitle" aria-label="重庆邮电大学 · 电子信息工程 × 人工智能"></p>
+    <p class="hero-tagline">miuyanwu.github.io — 项目复盘 / 学习笔记 / 生活随想</p>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num" id="stat-repos">0</div>
+        <div class="hero-stat-label">公开仓库</div>
+      </div>
+      <div>
+        <div class="hero-stat-num" id="stat-active">0</div>
+        <div class="hero-stat-label">本年活跃</div>
+      </div>
+      <div>
+        <div class="hero-stat-num" id="stat-age">0</div>
+        <div class="hero-stat-label">账号年龄</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="section-index">01 —</span> RECENT PUSHES</span>
+      <h2>最近动态</h2>
+    </div>
+    <div id="home-recent-pushes"></div>
+  </section>
+
+  <section class="section container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="section-index">02 —</span> SELECTED PROJECTS</span>
+      <h2>精选项目</h2>
+    </div>
+    <div class="grid">
+      <div class="col-4 reveal">
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="0" stroke="currentColor" stroke-width="1.7"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <div class="card-meta">C# · WPF · 2026</div>
+          <h3 class="card-title">Favorite-sticker</h3>
+          <p class="card-desc">剪贴板历史管理工具。用 C# / WPF 写的桌面剪贴板管理器：自动保存剪贴板历史，支持收藏常用片段、一键复制、模糊搜索。作为日常工具在持续使用。</p>
+          <div class="card-footer">
+            <span class="badge badge-done"><span class="badge-dot"></span>已完成</span>
+            <a href="https://github.com/miuyanwu/Favorite-sticker" target="_blank" rel="noopener noreferrer" aria-label="查看 Favorite-sticker 仓库">
+              <svg class="card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 reveal">
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2v6M12 16v6M6 12H2M22 12h-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/></svg>
+          <div class="card-meta">PYTHON · PYTORCH · 35 EXP · AUC 0.9225</div>
+          <h3 class="card-title">Breast-Ultrasound-Image-Diagnosis-System</h3>
+          <p class="card-desc">乳腺超声图像良恶性分类。基于 PyTorch 的医学影像分类项目：迁移学习 + 注意力机制 + Focal Loss，经 35 次实验迭代，验证集 AUC 0.9225。数据受隐私限制，仓库目前以实验文档为主。</p>
+          <div class="card-footer">
+            <span class="badge badge-progress"><span class="badge-dot"></span>进行中</span>
+            <a href="https://github.com/miuyanwu/Breast-Ultrasound-Image-Diagnosis-System" target="_blank" rel="noopener noreferrer" aria-label="查看 Breast-Ultrasound-Image-Diagnosis-System 仓库">
+              <svg class="card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 reveal">
+        <div class="card" style="align-items:flex-start;">
+          <svg class="card-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3 class="card-title">查看全部项目</h3>
+          <p class="card-desc">全部公开仓库、提交记录与 Profile README。</p>
+          <div class="card-footer">
+            <a class="btn btn-secondary" href="https://github.com/miuyanwu" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="section-index">03 —</span> NOTES</span>
+      <h2>学习笔记</h2>
+    </div>
+    <div id="home-posts-list"></div>
+    <p style="margin-top: var(--space-6);"><a class="link-underline" href="#/posts">查看全部笔记 →</a></p>
+  </section>
+
+  <section class="section section--tight container">
+    <div class="grid">
+      <div class="col-6 reveal">
+        <div class="monogram">E//</div>
+      </div>
+      <div class="col-6 reveal">
+        <span class="eyebrow"><span class="section-index">04 —</span> ABOUT</span>
+        <p class="zh-body">我是 Elysia10032，GitHub 上叫 miuyanwu，重庆邮电大学电子信息工程专业在读，兴趣方向是人工智能。这个网站是我的数字花园：项目复盘、学习笔记，和一点关于天文与生活的随想。最近在学Langchain，其余时间打羽毛球、跑步、打乒乓球，偶尔在晴朗的夜晚架起望远镜。</p>
+        <table>
+          <tbody>
+            <tr><th>学校</th><td>重庆邮电大学</td></tr>
+            <tr><th>专业</th><td>电子信息工程</td></tr>
+            <tr><th>方向</th><td>人工智能</td></tr>
+            <tr><th>兴趣</th><td>天文 / 羽毛球 / 跑步 / 乒乓球 / 动漫</td></tr>
+            <tr><th>正在学</th><td>Langchain</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top: var(--space-4);"><a class="link-underline" href="#/about">了解更多 →</a></p>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ 笔记列表 ============ -->
+<section data-view="posts">
+  <section class="section container" style="padding-top: var(--space-16);">
+    <div class="section-head">
+      <span class="eyebrow">NOTES</span>
+      <h2>学习笔记</h2>
+    </div>
+    <div id="posts-tag-filter" class="posts-tag-filter"></div>
+    <div id="posts-full-list" class="posts-list"></div>
+    <div id="posts-pagination" class="posts-pagination"></div>
+  </section>
+</section>
+
+<!-- ============ 单篇笔记 ============ -->
+<section data-view="post">
+  <section class="section container" style="padding-top: var(--space-16);">
+    <div id="post-content" class="prose"></div>
+  </section>
+</section>
+
+<!-- ============ 项目页 ============ -->
+<section data-view="projects">
+  <section class="section container" style="padding-top: var(--space-16);">
+    <div class="section-head">
+      <span class="eyebrow">SELECTED PROJECTS</span>
+      <h2>精选项目</h2>
+    </div>
+    <div class="grid">
+      <div class="col-6 reveal">
+        <div class="card">
+          <div class="card-meta">C# · WPF · 2026</div>
+          <h3 class="card-title">Favorite-sticker</h3>
+          <p class="card-desc">剪贴板历史管理工具。用 C# / WPF 写的桌面剪贴板管理器：自动保存剪贴板历史，支持收藏常用片段、一键复制、模糊搜索。作为日常工具在持续使用。</p>
+          <div class="card-footer">
+            <span class="badge badge-done"><span class="badge-dot"></span>已完成</span>
+            <a href="https://github.com/miuyanwu/Favorite-sticker" target="_blank" rel="noopener noreferrer" aria-label="查看 Favorite-sticker 仓库">
+              <svg class="card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 reveal">
+        <div class="card">
+          <div class="card-meta">PYTHON · PYTORCH · 35 EXP · AUC 0.9225</div>
+          <h3 class="card-title">Breast-Ultrasound-Image-Diagnosis-System</h3>
+          <p class="card-desc">乳腺超声图像良恶性分类。基于 PyTorch 的医学影像分类项目：迁移学习 + 注意力机制 + Focal Loss，经 35 次实验迭代，验证集 AUC 0.9225。数据受隐私限制，仓库目前以实验文档为主。</p>
+          <div class="card-footer">
+            <span class="badge badge-progress"><span class="badge-dot"></span>进行中</span>
+            <a href="https://github.com/miuyanwu/Breast-Ultrasound-Image-Diagnosis-System" target="_blank" rel="noopener noreferrer" aria-label="查看 Breast-Ultrasound-Image-Diagnosis-System 仓库">
+              <svg class="card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-head">
+      <span class="eyebrow">RECENT PUSHES</span>
+      <h2>最近动态</h2>
+    </div>
+    <div id="projects-recent-pushes"></div>
+  </section>
+
+  <section class="section container">
+    <div class="section-head">
+      <span class="eyebrow">ALL REPOSITORIES <span id="projects-offline-tag" class="repo-offline-tag" style="display:none;">· 离线数据</span></span>
+      <h2>全部公开仓库</h2>
+    </div>
+    <table>
+      <thead>
+        <tr><th>仓库</th><th>语言</th><th>描述</th><th class="num">最近更新</th></tr>
+      </thead>
+      <tbody id="all-repos-table-body"></tbody>
+    </table>
+  </section>
+</section>
+
+<!-- ============ 关于我 ============ -->
+<section data-view="about">
+  <section class="section container" style="padding-top: var(--space-16);">
+    <span class="eyebrow">ABOUT</span>
+    <h1 style="font-size: var(--text-3xl); font-weight:600; letter-spacing:-0.02em;">关于我</h1>
+    <div class="prose">
+      <p class="zh-body">我是 Elysia10032，GitHub 上叫 miuyanwu，重庆邮电大学电子信息工程专业在读，兴趣方向是人工智能。这个网站是我的数字花园：项目复盘、学习笔记，和一点关于天文与生活的随想。</p>
+      <p class="zh-body">做这个站的原因很简单：笔记记在本地文档里，半年后自己都翻不到，不如放到一个能被搜索、能分享的地方。乳腺超声那个项目的实验记录尤其典型——35 次实验的表格如果只存在电脑里，早晚会因为换台电脑就丢了。现在在做的事：把 C 语言的指针和内存管理啃透，同时整理乳腺超声项目的 README，把它变成一份"半年后的自己也能看懂"的文档。业余时间打羽毛球、跑步、打乒乓球，偶尔在晴朗的夜晚架起望远镜看看星空。</p>
+      <table>
+        <tbody>
+          <tr><th>学校</th><td>重庆邮电大学 · Chongqing University of Posts and Telecommunications</td></tr>
+          <tr><th>专业</th><td>电子信息工程 · Electronic Information Engineering</td></tr>
+          <tr><th>方向</th><td>人工智能 · Artificial Intelligence</td></tr>
+          <tr><th>兴趣</th><td>天文 / 羽毛球 / 跑步 / 乒乓球 / 动漫</td></tr>
+          <tr><th>正在学</th><td>C 语言</td></tr>
+        </tbody>
+      </table>
+      <blockquote><p>一直在输入，偶尔也在输出。</p></blockquote>
+    </div>
+  </section>
+</section>
+
+<!-- ============ Now 页 ============ -->
+<section data-view="now">
+  <section class="section container" style="padding-top: var(--space-16);">
+    <span class="eyebrow">NOW</span>
+    <h1 style="font-size: var(--text-3xl); font-weight:600; letter-spacing:-0.02em;">最近在做</h1>
+    <p class="card-meta" style="margin-bottom: var(--space-6);">最后更新：2026-07</p>
+    <div class="prose">
+      <ul class="zh-body">
+        <li>学习Langchain：为了后续搭建自己的智能体；</li>
+        <li>整理乳腺超声项目的实验记录，补全 README 与数据说明；</li>
+        <li>读HSI相关论文，做阅读笔记；</li>
+        <li>跑步训练，一周五次，争取达标半马二级运动员。</li>
+      </ul>
+    </div>
+  </section>
+</section>
+
+<!-- ============ 404 ============ -->
+<section data-view="404">
+  <div class="view-404 container">
+    <div class="code-404">404</div>
+    <p>页面不存在 / Not Found</p>
+    <a class="btn btn-primary" href="#/">返回首页</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer container">
+  <div class="footer-grid">
+    <div>
+      <p>© 2026 miuyanwu · Elysia10032</p>
+      <p>电子信息工程 × 人工智能</p>
+    </div>
+    <div>
+      <!-- TODO: 备案通过后替换 -->
+      <p>渝ICP备XXXXXXXX号-1</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/miuyanwu" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <!-- TODO: 替换为真实邮箱 -->
+      <a href="mailto:shichaoyang555@gmail.com">shichaoyang555@gmail.com</a>
+      <p>Powered by pure HTML/CSS/JS</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/markdown.js"></script>
+<script src="js/motion.js"></script>
+<script src="js/router.js"></script>
+<script src="js/posts.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
